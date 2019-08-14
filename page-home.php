@@ -3,6 +3,15 @@
     Template Name: Home Page
  */
 
+//  Custom Fields
+$prelaunch_price    = get_post_meta(8, 'prelaunch_price', true);
+$launch_price       = get_post_meta(8, 'launch_price', true);
+$final_price        = get_post_meta(8, 'final_price', true);
+$course_url         = get_post_meta(8, 'course_url', true);
+$button_text        = get_post_meta(8, 'button_text', true);
+$optin_text         = get_post_meta(8, 'optin_text', true);
+$optin_button_text  = get_post_meta(8, 'optin_button_text', true);
+
 get_header(); ?>
 
 <!-- HERO
@@ -17,29 +26,27 @@ get_header(); ?>
                 </div><!-- col -->
 
                 <div class="col-sm-7 hero-text">
-                    <h1>Bootstrap to WordPress</h1>
-                    <p class="lead">Earn An Extra $1k - $5k a Month by Learning to Code Your Very Own Responsive &amp;
-                        Custom
-                        WordPress Website with Bootstrap</p>
+                    <h1><?php bloginfo('name'); ?></h1>
+                    <p class="lead"><?php bloginfo('description'); ?></p>
 
                     <div id="price-timeline">
                         <div class="price active">
                             <h4>Pre-Launch Price <small>Ends soon!</small></h4>
-                            <span>$149</span>
+                            <span><?php echo $prelaunch_price; ?></span>
                         </div><!-- price -->
 
                         <div class="price">
                             <h4>Launch Price <small>Coming soon!</small></h4>
-                            <span>$299</span>
+                            <span><?php echo $launch_price; ?></span>
                         </div><!-- price -->
 
                         <div class="price">
                             <h4>Final Price <small>Coming soon!</small></h4>
-                            <span>$399</span>
+                            <span><?php echo $final_price; ?></span>
                         </div><!-- price -->
                     </div><!-- price-timeline -->
 
-                    <p><a href="/" class="btn btn-lg btn-danger" role="button">Enroll &raquo;</a></p>
+                    <p><a href="<?php echo $course_url; ?>" class="btn btn-lg btn-danger" role="button"><?php echo $button_text; ?></a></p>
 
                 </div><!-- col -->
 
@@ -54,16 +61,11 @@ get_header(); ?>
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
-                <p class="lead"><strong>Subscribe to our mailing list.</strong> We'll send something special as a thank
-                    you.
-                </p>
+                <p class="lead"><?php echo $optin_text; ?></p>
             </div><!-- col -->
 
             <div class="col-sm-4">
-                <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal">Click here
-                    to
-                    Subscribe
-                </button>
+                <button class="btn btn-success btn-lg btn-block" data-toggle="modal" data-target="#myModal"><?php echo $optin_button_text; ?></button>
             </div><!-- col -->
         </div><!-- row -->
     </div><!-- container -->
@@ -263,8 +265,7 @@ get_header(); ?>
         <div class="row">
             <div class="col-sm-8 col-sm-offset-2">
                 <h2>Watch the Course Introduction</h2>
-                <iframe width="100%" height="415" src="//www.youtube.com/embed/q-mJJsnOHew" frameborder="0"
-                        allowfullscreen></iframe>
+                <iframe width="100%" height="415" src="//www.youtube.com/embed/q-mJJsnOHew" frameborder="0" allowfullscreen></iframe>
             </div><!-- col -->
         </div><!-- row -->
     </div><!-- container -->
@@ -281,62 +282,59 @@ get_header(); ?>
                         <h2>Your Instructor <small>Brad Hussey</small></h2>
                     </div><!-- end col -->
                     <div class="col-lg-4">
-                        <a href="https://twitter.com/bradhussey" class="badge social twitter" target="_blank"><i
-                                    class="fa fa-twitter"></i></a>
-                        <a href="https://facebook.com/bradhussey" class="badge social facebook" target="_blank"><i
-                                    class="fa fa-facebook"></i></a>
-                        <a href="https://plus.google.com/+BradHussey" class="badge social gplus" target="_blank"><i
-                                    class="fa fa-google-plus"></i></a>
+                        <a href="https://twitter.com/bradhussey" class="badge social twitter" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://facebook.com/bradhussey" class="badge social facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://plus.google.com/+BradHussey" class="badge social gplus" target="_blank"><i class="fa fa-google-plus"></i></a>
                     </div><!-- end col -->
                 </div><!-- row -->
 
                 <p class="lead">A highly skilled professional, Brad Hussey is a passionate and experienced web designer,
                     developer, blogger and digital entrepreneur.
-                <p>
+                    <p>
 
-                <p>Hailing from North Of The Wall (Yellowknife, Canada), Brad made the trek to the Wet Coast (Vancouver,
-                    Canada) to educate and equip himself with the necessary skills to become a spearhead in his trade of
-                    solving problems on the web, crafting design solutions, and speaking in code.</p>
+                        <p>Hailing from North Of The Wall (Yellowknife, Canada), Brad made the trek to the Wet Coast (Vancouver,
+                            Canada) to educate and equip himself with the necessary skills to become a spearhead in his trade of
+                            solving problems on the web, crafting design solutions, and speaking in code.</p>
 
-                <p>Brad's determination and love for what he does has landed him in some pretty interesting places with
-                    some neat people. He's had the privilege of working with, and providing solutions for, numerous
-                    businesses, big &amp; small, across the Americas.</p>
+                        <p>Brad's determination and love for what he does has landed him in some pretty interesting places with
+                            some neat people. He's had the privilege of working with, and providing solutions for, numerous
+                            businesses, big &amp; small, across the Americas.</p>
 
-                <p>Brad builds custom websites, and provides design solutions for a wide-array of clientele at his
-                    company, Brightside Studios. He regularly blogs about passive income, living your life to the
-                    fullest,
-                    and provides premium quality web design tutorials and courses for tens of thousands of amazing
-                    people
-                    desiring to master their craft.</p>
+                        <p>Brad builds custom websites, and provides design solutions for a wide-array of clientele at his
+                            company, Brightside Studios. He regularly blogs about passive income, living your life to the
+                            fullest,
+                            and provides premium quality web design tutorials and courses for tens of thousands of amazing
+                            people
+                            desiring to master their craft.</p>
 
-                <hr>
+                        <hr>
 
-                <h3>The Numbers <small>They Don't Lie</small></h3>
-                <div class="row">
-                    <div class="col-xs-4">
-                        <div class="num">
-                            <div class="num-content">
-                                41,000+ <span>students</span>
-                            </div><!-- num-content -->
-                        </div><!-- num -->
-                    </div><!-- end col -->
+                        <h3>The Numbers <small>They Don't Lie</small></h3>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <div class="num">
+                                    <div class="num-content">
+                                        41,000+ <span>students</span>
+                                    </div><!-- num-content -->
+                                </div><!-- num -->
+                            </div><!-- end col -->
 
-                    <div class="col-xs-4">
-                        <div class="num">
-                            <div class="num-content">
-                                568 <span>reviews</span>
-                            </div><!-- num-content -->
-                        </div><!-- num -->
-                    </div><!-- end col -->
+                            <div class="col-xs-4">
+                                <div class="num">
+                                    <div class="num-content">
+                                        568 <span>reviews</span>
+                                    </div><!-- num-content -->
+                                </div><!-- num -->
+                            </div><!-- end col -->
 
-                    <div class="col-xs-4">
-                        <div class="num">
-                            <div class="num-content">
-                                8 <span>courses</span>
-                            </div><!-- num-content -->
-                        </div><!-- num -->
-                    </div><!-- end col -->
-                </div><!-- row -->
+                            <div class="col-xs-4">
+                                <div class="num">
+                                    <div class="num-content">
+                                        8 <span>courses</span>
+                                    </div><!-- num-content -->
+                                </div><!-- num -->
+                            </div><!-- end col -->
+                        </div><!-- row -->
 
             </div><!-- end col -->
         </div><!-- row -->
