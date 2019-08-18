@@ -1,9 +1,9 @@
-<?php 
+<?php
 
 // Advanced Custom Fields
-$who_feature_image              = get_field('who_feature_image');
-$who_section_title              = get_field('who_section_title');
-$who_section_body               = get_field('who_section_body');
+$who_feature_image = get_field('who_feature_image');
+$who_section_title = get_field('who_section_title');
+$who_section_body = get_field('who_section_body');
 
 ?>
 
@@ -15,9 +15,9 @@ $who_section_body               = get_field('who_section_body');
         <div class="section-header">
 
             <!-- If user uploaded an image -->
-            <?php if (!empty($who_feature_image)) :  ?>
+            <?php if (!empty($who_feature_image)) : ?>
 
-            <img src="<?php echo $who_feature_image['url']; ?>" alt="<?php echo $who_feature_image['alt'] ?>">
+                <img src="<?php echo $who_feature_image['url']; ?>" alt="<?php echo $who_feature_image['alt'] ?>">
 
             <?php endif; ?>
 
