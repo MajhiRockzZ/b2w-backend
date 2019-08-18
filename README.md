@@ -1,29 +1,26 @@
 # 🎨 B2W-Back-End
 
-=== Bootstrap to WordPress ===
-
-Contributors: automattic
-Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+**Bootstrap to WordPress**
 
 A starter theme called Bootstrap to WordPress.
 
-== Description ==
+**Description**
 
 Bootstrap to WordPress Course Theme
 
-== Installation ==
+**Installation**
 
 1. In your admin panel, go to Appearance > Themes and click the Add New button.
 2. Click Upload Theme and Choose File, then select the theme's .zip file. Click Install Now.
 3. Click Activate to use your new theme right away.
 
-== Frequently Asked Questions ==
+**Frequently Asked Questions**
 
-= Does this theme support any plugins? =
+* Q . Does this theme support any plugins?
 
-Bootstrap to WordPress includes support for Infinite Scroll in Jetpack.
+* A . Bootstrap to WordPress includes support for Infinite Scroll in Jetpack.
 
-== Credits ==
+**Credits**
 
 * Based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc., [GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 * normalize.css https://necolas.github.io/normalize.css/, (C) 2012-2016 Nicolas Gallagher and Jonathan Neal, [MIT](https://opensource.org/licenses/MIT)
