@@ -82,4 +82,6 @@
         </div><!-- navbar-wrapper -->
     </header>
 
+    <!-- TODO: Still need to fix the header navigation area for perfect hyperlinks. -->
+
     <div id="content" class="site-content">

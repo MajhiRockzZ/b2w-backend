@@ -49,6 +49,7 @@
         </div><!-- end col -->
     </div><!-- container -->
 </footer>
+<!-- TODO: Still need to fix the footer lower area having unnecessary space. -->
 
 <!-- MODAL
 ===================================================== -->
