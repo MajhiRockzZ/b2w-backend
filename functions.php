@@ -114,8 +114,8 @@ function b2w_widgets_init()
         'description' => esc_html__('Add widgets here.', 'b2w'),
         'before_widget' => '<section id="%1$s" class="widget %2$s">',
         'after_widget' => '</section>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
+        'before_title' => '<h4 class="widget-title">',
+        'after_title' => '</h4>',
     ));
 }
 
@@ -169,11 +169,10 @@ if (defined('JETPACK__VERSION')) {
 /**
  * Replaces the excerpt "more" text by a link.
  */
-function new_excerpt_more($more)
-{
+function new_excerpt_more($more) {
     global $post;
-    return '... <a class="moretag" href="' . get_permalink($post->ID) . '"> continue reading &raquo;</a>';
+    return '... <a class="moretag" href="'. get_permalink($post->ID) . '"> continue reading &raquo;</a>';
 }
-
 add_filter('excerpt_more', 'new_excerpt_more');
+
 
