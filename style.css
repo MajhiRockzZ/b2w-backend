@@ -381,10 +381,10 @@ Blue Gray: #3e4249
 /* === GENERAL === */
 
 body {
-	margin-top: 50px;
-	font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
-	font-size: 16px;
-	background: url('/b2w/wp-content/themes/bootstrap-to-wordpress/assets/img/tile.jpg') top left repeat;
+    margin-top: 50px;
+    font-family: 'proxima-nova', 'Raleway', Helvetica, sans-serif;
+    font-size: 16px;
+    background: url('/b2w/wp-content/themes/bootstrap-to-wordpress/assets/img/tile.jpg') top left repeat;
 }
 
 .logged-in .navbar-fixed-top {
@@ -807,7 +807,7 @@ footer li.signup-link a:hover {
     font-size: 24px;
 }
 
-.post-image {
+.post-image img {
     height: auto;
 }
 
