@@ -58,23 +58,25 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="/" class="navbar-brand"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png"
-                                                              alt="Bootstrap to WordPress"></a>
+                        <a href="/" class="navbar-brand"><img
+                                    src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png"
+                                    alt="Bootstrap to WordPress"></a>
                     </div><!-- navbar-header -->
 
                     <!-- If the menu (WP admin area) is not set, then the "menu_class" is applied to "container". In other words, it overwrites the "container_class". Ref: http://wordpress.org/support/topic/wp_nav_menu-menu_class-usage-bug?replies=4 -->
 
-                    <?php
-                    wp_nav_menu(array(
+                    <nav class="navbar-collapse collapse">
+                        <?php
+                        wp_nav_menu(array(
 
-                        'theme_location'      => 'primary',
-                        'container'           => 'nav',
-                        'container_class'     => 'navbar-collapse collapse',
-                        'menu_class'          => 'nav navbar-nav navbar-right'
+                            'theme_location' => 'primary',
+                            'container' => 'ul',
+                            'menu_class' => 'nav navbar-nav navbar-right',
+                            'menu_id' => 'menu-main-menu',
 
-                    ));
-                    ?>
-
+                        ));
+                        ?>
+                    </nav><!-- navbar-collapse -->
 
                 </div><!-- container -->
 
