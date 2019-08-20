@@ -58,7 +58,7 @@
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
                         </button>
-                        <a href="/b2w" class="navbar-brand"><img
+                        <a href="<?php echo esc_url(home_url('/')); ?>" class="navbar-brand"><img
                                     src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png"
                                     alt="Bootstrap to WordPress"></a>
                     </div><!-- navbar-header -->

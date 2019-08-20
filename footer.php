@@ -31,8 +31,9 @@
 <footer>
     <div class="container">
         <div class="col-sm-3">
-            <p><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png"
-                                alt="Bootstrap to WordPress"></a></p>
+            <p><a href="<?php echo esc_url(home_url('/')); ?>"><img
+                            src="<?php bloginfo('stylesheet_directory'); ?>/assets/img/logo.png"
+                            alt="Bootstrap to WordPress"></a></p>
         </div><!-- end col -->
         <div class="col-sm-6">
             <?php
