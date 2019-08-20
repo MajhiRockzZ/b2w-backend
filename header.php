@@ -65,18 +65,16 @@
 
                     <!-- If the menu (WP admin area) is not set, then the "menu_class" is applied to "container". In other words, it overwrites the "container_class". Ref: http://wordpress.org/support/topic/wp_nav_menu-menu_class-usage-bug?replies=4 -->
 
-                    <nav class="navbar-collapse collapse">
-                        <?php
-                        wp_nav_menu(array(
+                    <?php
+                    wp_nav_menu( array(
 
-                            'theme_location' => 'primary',
-                            'container' => 'ul',
-                            'menu_class' => 'nav navbar-nav navbar-right',
-                            'menu_id' => 'menu-main-menu',
+                        'theme_location'	=> 'menu-1',
+                        'container'			=> 'nav',
+                        'container_class'	=> 'navbar-collapse collapse',
+                        'menu_class'		=> 'nav navbar-nav navbar-right'
 
-                        ));
-                        ?>
-                    </nav><!-- navbar-collapse -->
+                    ) );
+                    ?>
 
                 </div><!-- container -->
 
