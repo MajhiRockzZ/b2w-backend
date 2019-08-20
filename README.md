@@ -1,8 +1,8 @@
-# 🎨 B2W-Back-End
+# 🎨 WordPress-Project-1
 
 **Bootstrap to WordPress**
 
-A starter theme called Bootstrap to WordPress.
+A WordPress theme called Bootstrap to WordPress.
 
 **Description**
 
